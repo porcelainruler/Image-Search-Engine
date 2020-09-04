@@ -1,0 +1,6 @@
+Files:
+1. config.py  -->  Hyperparameters (Done)
+2. dataPreprocess.py  -->  Save Image Index/Features in a CSV(output.csv) File (Done)
+3. ImageDescriptor.py  -->  Contains Function for Extracting Features from the Image (5 Regions of Image Till Now) (Done)
+4. searchEngine.py  -->  Function for Comparing Features in Query Image and Image in DB and show a pre limit Images with most similar Features (Done)
+5. search  -->  Program for Query (Takes Query Image --> Apply searchEngine to receive Similar Images --> Show Result) (Partially Done)
