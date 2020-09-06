@@ -4,3 +4,10 @@ Files:
 3. ImageDescriptor.py  -->  Contains Function for Extracting Features from the Image (5 Regions of Image Till Now) (Done)
 4. searchEngine.py  -->  Function for Comparing Features in Query Image and Image in DB and show a pre limit Images with most similar Features (Done)
 5. search  -->  Program for Query (Takes Query Image --> Apply searchEngine to receive Similar Images --> Show Result) (Partially Done)
+
+
+Dataset:
+Most Useful By Order:
+1. Link - https://lear.inrialpes.fr/~jegou/data.php#holidays
+2. Emodb - http://diameter.itn.liu.se/emodb/
+3. Link - http://mmlab.ie.cuhk.edu.hk/datasets/image_search/index.html
