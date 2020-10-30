@@ -1,0 +1,250 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+    font-family: monospace;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.headerbar {
+  display: flex;
+  width: auto;
+  height: 7.5vh;
+  min-height: 20px;
+  background-color: white;
+}
+
+.logo {
+  display: inline-block;
+  line-height: 7.5vh;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0.05vw;
+  color: white;
+  background-color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 1vw;
+  padding-right: 1rem;
+}
+
+.navigation {
+  display: inline-block;
+  height: 100%;
+  width: fit-content;
+  margin-left: auto;
+}
+
+ul {
+  background: rgb(0, 0, 0);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: rgb(0, 0, 0);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover,
+li:focus-within {
+    background: red;
+    cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+    background: orange;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+.logo:hover {
+  color: grey;
+  transition: all 0.5s ease;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.subsub {
+  margin: 1rem;
+}
+
+.subtitle {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.image {
+  padding: 1rem;
+  border-width: medium;
+  border-style: solid;
+}
+
+p {
+  padding: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+
+}
+
+.content {
+  width: 100%;
+  background-color: white;
+}
+
+  .date-form {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-around;
+    align-self: center;
+    align-content: space-around;
+  }
+
+  .extra {
+    padding-bottom: 2rem;
+  }
+
+  .sub-form {
+    align-self: center;
+    width: 18rem;
+    min-width: 200px;
+    height: 4rem;
+    min-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+
+  .ext {
+    border-width: 2px;
+    border-color: black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: cyan;
+    transition: all 0.5s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: red;
+    transition: all 0.5s ease;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .main-from {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .form-tab {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .text-styl {
+      font-size: 20px;
+      font-style: oblique;
+      font-weight: bold;
+      font-family: cursive;
+  }
+
+  .image-take {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  .search-btn {
+    width: 80px;
+    height: 25px;
+    border-radius: 4px;
+  }
+
+  .single-image-display {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  .image-sz {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image-display {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }

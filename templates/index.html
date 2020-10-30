@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+      <title>
+          Assignment
+      </title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+  </head>
+
+  <body>
+    <div class="headerbar">
+      <div class="logo">
+        <a href="#" class="logo">Search-Unlimited</a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#" aria-haspopup="true">Blog</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="#">Post-1</a></li>
+              <li><a href="#">Post-2</a></li>
+              <li><a href="#">Post-3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-form">
+      <h1 class="title">Welcome!</h1>
+      <form class="form-tab" action="" method="post" enctype="multipart/form-data">
+        <div class="serach-query">
+          <label class="text-styl" for="img">Select image:</label>
+          <input class="image-take" type="file" id="img" name="img" accept="image/*">
+        </div>
+        <input class="btn-primary search-btn" type="submit" value="Search">
+      </form>
+    </div>
+
+    <div class="image-display">
+      {% for image in context.images %}
+        <div class="single-image-display">
+          <img class="image-sz" src="/static/{{ image.Image }}" height="200">
+          <p>{{ image.Score }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </body>
+</html>

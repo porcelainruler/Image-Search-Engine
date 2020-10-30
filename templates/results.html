@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>Welcome!</h1>
+{% for image in context.images %}
+    <img src="/static/{{ image.Image }}" height="200">
+    <p>{{ image.Score }}</p>
+{% endfor %}
+
+{% endblock %}
+
